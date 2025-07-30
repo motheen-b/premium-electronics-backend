@@ -22,7 +22,7 @@ client = Square(
     environment=environment.SquareEnvironment.PRODUCTION
 )
 
-@app.get("/")
+@app.get("/catalog")
 async def get_products():
     try:
         image_urls = {}
